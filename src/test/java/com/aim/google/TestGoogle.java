@@ -9,7 +9,6 @@ import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 
 //para print
@@ -25,7 +24,7 @@ import org.apache.commons.io.FileUtils;//se debe agregar dependecy de commons io
 //no la sugiere asi que se copia y pega manual
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class testGoogle {
+public class TestGoogle {
     private WebDriver driver;
 
     //para la version junit 5 se usa @BeforeEach y @AfterEach
@@ -45,8 +44,6 @@ public class testGoogle {
 
         driver.manage().window().maximize();
         driver.get("https://www.bing.com/?setlang=es");
-
-
     }
 
     @Test
